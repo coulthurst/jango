@@ -1,0 +1,111 @@
+ <md-toolbar ng-show="!showSearch" >
+    <div class="md-toolbar-tools">
+        <div class="md-toolbar-tools">
+            <md-button ng-click="toggleSidenav('left')"  class="md-icon-button">
+                <i class="material-icons">menu</i>
+            </md-button>
+            <h1><b>Jango</b></h1>
+        </div>
+        <span flex></span>
+        <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+            <i class="material-icons">search</i>
+        </md-button>
+    </div>
+    <md-tabs md-stretch-tabs class="md-primary" md-selected="data.selectedIndex">
+        <md-tab id="tab1" aria-controls="tab1-content">
+                <a class="md-body-1" href="#aww">Aww</a>
+            </md-tab>
+            <md-tab id="tab2" aria-controls="tab2-content">
+                <a class="md-body-1" href="#fitness">Fitness</a>
+            </md-tab>
+            <md-tab id="tab3" aria-controls="tab3-content">
+                <a class="md-body-1" href="#food">Food</a>
+            </md-tab>
+            <md-tab id="tab4" aria-controls="tab4-content">
+                <a class="md-body-1" href="#funny">Funny</a>
+            </md-tab>
+            <md-tab id="tab5" aria-controls="tab5-content">
+                <a class="md-body-1" href="#gaming">Gaming</a>
+            </md-tab>
+            <md-tab id="tab6" aria-controls="tab6-content">
+                <a class="md-body-1" href="#history">History</a>
+            </md-tab>
+            <md-tab id="tab7" aria-controls="tab7-content">
+                <a class="md-body-1" href="#movies">Movies</a>
+            </md-tab>
+            <md-tab id="tab8" aria-controls="tab8-content">
+                <a class="md-body-1" href="#music">Music</a>
+            </md-tab>
+            <md-tab id="tab9" aria-controls="tab9-content">
+                <a class="md-body-1" href="#nature">Nature</a>
+            </md-tab>
+            <md-tab id="tab10" aria-controls="tab10-content">
+                <a class="md-body-1" href="#news">News</a>
+            </md-tab>
+            <md-tab id="tab11" aria-controls="tab11-content">
+                <a class="md-body-1" href="#science">Science</a>
+            </md-tab>
+            <md-tab id="tab12" aria-controls="tab12-content">
+                <a class="md-body-1" href="#sports">Sports</a>
+            </md-tab>
+            <md-tab id="tab13" aria-controls="tab13-content">
+                <a class="md-body-1" href="#television">Television</a>
+            </md-tab>
+    </md-tabs>
+</md-toolbar>
+<md-toolbar class="md-hue-1" ng-show="showSearch">
+    <div class="md-toolbar-tools">
+        <md-button ng-click="showSearch = !showSearch" aria-label="Back">
+            <i class="material-icons">arrow_back</i>
+        </md-button>
+        <md-input-container md-theme="input" flex>
+
+            <input ng-model="search.who" placeholder="search...">
+        </md-input-container>
+        <md-button aria-label="Search" ng-click="showSearch = !showSearch">
+            <i class="material-icons">search</i>
+        </md-button>
+
+    </div>
+    <md-tabs md-stretch-tabs class="md-primary" md-selected="data.selectedIndex">
+        <md-tab id="tab1" aria-controls="tab1-content">
+                <a class="md-body-1" href="#aww">Aww</a>
+            </md-tab>
+            <md-tab id="tab2" aria-controls="tab2-content">
+                <a class="md-body-1" href="#fitness">Fitness</a>
+            </md-tab>
+            <md-tab id="tab3" aria-controls="tab3-content">
+                <a class="md-body-1" href="#food">Food</a>
+            </md-tab>
+            <md-tab id="tab4" aria-controls="tab4-content">
+                <a class="md-body-1" href="#funny">Funny</a>
+            </md-tab>
+            <md-tab id="tab5" aria-controls="tab5-content">
+                <a class="md-body-1" href="#gaming">Gaming</a>
+            </md-tab>
+            <md-tab id="tab6" aria-controls="tab6-content">
+                <a class="md-body-1" href="#history">History</a>
+            </md-tab>
+            <md-tab id="tab7" aria-controls="tab7-content">
+                <a class="md-body-1" href="#movies">Movies</a>
+            </md-tab>
+            <md-tab id="tab8" aria-controls="tab8-content">
+                <a class="md-body-1" href="#music">Music</a>
+            </md-tab>
+            <md-tab id="tab9" aria-controls="tab9-content">
+                <a class="md-body-1" href="#nature">Nature</a>
+            </md-tab>
+            <md-tab id="tab10" aria-controls="tab10-content">
+                <a class="md-body-1" href="#news">News</a>
+            </md-tab>
+            <md-tab id="tab11" aria-controls="tab11-content">
+                <a class="md-body-1" href="#science">Science</a>
+            </md-tab>
+            <md-tab id="tab12" aria-controls="tab12-content">
+                <a class="md-body-1" href="#sports">Sports</a>
+            </md-tab>
+            <md-tab id="tab13" aria-controls="tab13-content">
+                <a class="md-body-1" href="#television">Television</a>
+            </md-tab>
+    </md-tabs>
+</md-toolbar>

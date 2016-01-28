@@ -1,0 +1,43 @@
+<md-card>
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-display-2"><a href="{{post.url}}">{{post.title}}</a></span>
+            <div class="md-subhead">posted on {{post.date | date: 'MM/dd/yyyy @ h:mma'}} by <b> {{post.author}}</b> (posted in {{post.topic}})</div>
+        </md-card-title-text>
+    </md-card-title>
+</md-card>
+<br />
+<md-content flex md-scroll-y>
+    <div layout="column" >
+        <div layout="column" layout-fill layout-padding>
+
+            <div ng-repeat="comment in comments">
+                <md-list-item class="md-3-line md-long-text">
+                    <div class="md-avatar">
+                        <i class="material-icons">person</i>
+                    </div>
+                    <div class="md-list-item-text">
+                        <h3>{{ comment.author}}</h3>
+                        <h6>{{comment.date | date: 'MM/dd/yyyy @ h:mma'}}</h6>
+                        <h3>
+                            {{comment.text}}
+                        </h3>
+                    </div>
+                    <md-divider></md-divider>
+                </md-list-item>
+               
+            </div>
+            <br />
+<md-input-container  class="md-block">
+    <label>Comment...</label>
+    <input ng-model="comment.text">
+</md-input-container>
+<md-button ng-click="saveComment(comment)" class="md-raised md-accent">Comment</md-button>
+        </div>
+    </div>
+</md-content>
+
+
+<br />
+<br />
+<br />

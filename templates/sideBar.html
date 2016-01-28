@@ -1,0 +1,45 @@
+<div layout="row" ng-controller="SavePostController">
+    <md-sidenav layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" >
+        <md-toolbar class="md-tall md-hue-2">
+            <span flex></span>
+            <div layout="column" class="md-toolbar-tools-bottom inset">
+                <md-button class="md-accent" ng-click="logIn(user)">
+                    Log in with Google
+                </md-button>
+                <span></span>
+            </div>
+            
+        </md-toolbar>
+        <div layout="column">
+            <div class="addPostContainer ">
+                <md-input-container id="titleField" class="md-block">
+                    <label>Title</label>
+                    <input ng-model="post.title">
+                </md-input-container>
+                <md-input-container id="urlField" class="md-block">
+                    <label>URL</label>
+                    <input ng-model="post.url">
+                </md-input-container>
+                <md-input-container id="topicField" class="md-block">
+                    <label>Topic</label>
+                    <md-select ng-model="post.topic">
+                        <md-option value="aww">Aww</md-option>
+                        <md-option value="fitness">Fitness</md-option>
+                        <md-option value="food">Food</md-option>
+                        <md-option value="funny">Funny</md-option>
+                        <md-option value="gaming">Gaming</md-option>
+                        <md-option value="history">History</md-option>
+                        <md-option value="movies">Movies</md-option>
+                        <md-option value="music">Music</md-option>
+                        <md-option value="nature">Nature</md-option>
+                        <md-option value="news">News</md-option>
+                        <md-option value="science">Science</md-option>
+                        <md-option value="sports">Sports</md-option>
+                        <md-option value="television">Television</md-option>
+                    </md-select>
+                </md-input-container>
+                <md-button ng-click="savePost(post)" class="md-raised md-accent">Submit Post</md-button>
+            </div>
+        </div>
+    </md-sidenav>
+</div>

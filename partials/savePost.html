@@ -1,0 +1,39 @@
+<div layout="column">
+    <div class="savePostContainer">
+
+        <md-input-container id="titleField" class="md-block">
+            <label>Title</label>
+            <input ng-model="post.title">
+        </md-input-container>
+
+        <md-input-container id="contentField" class="md-block">
+            <label>Text...</label>
+            <input ng-model="post.content">
+        </md-input-container>
+
+        <md-input-container class="selectTopic">
+            <label>Topic</label>
+            <md-select id="topicField" ng-model="post.topic">
+                <md-optgroup label="Topics">
+                    <md-option value="sports">Sports</md-option>
+                    <md-option value="gaming">Gaming</md-option>
+                    <md-option value="news">News</md-option>
+                    <md-option value="music">Music</md-option>
+                    <md-option value="funny">Funny</md-option>
+                    <md-option value="aww">Aww</md-option>
+                    <md-option value="nature">Nature</md-option>
+                    <md-option value="movies">Movies</md-option>
+                    <md-option value="history">History</md-option>
+                    <md-option value="science">Science</md-option>
+                    <md-option value="television">Television</md-option>
+                    <md-option value="fitness">Fitness</md-option>
+                    <md-option value="food">Food</md-option>
+                </md-optgroup>
+            </md-select>
+        </md-input-container>
+    </div>
+    <md-button ng-click="saveTextPost(post)" class="md-raised md-accent">Submit Post</md-button>
+</div>
+<md-button class="md-accent" ng-click="logIn(user)">
+    Log in with Google
+</md-button>

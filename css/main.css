@@ -1,0 +1,45 @@
+.md-toolbar-tools h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: inherit;
+}
+
+.md-body-1 {
+    text-decoration: none;
+    color: white;
+}
+
+.cardContainer {
+  margin: 10px 20px 0 20px;
+}
+.md-display-2 a {
+    text-decoration: none;
+    color: #616161;
+}
+.md-display-2 a:hover {
+  color: #FF4081;
+}
+.md-subhead {
+}
+
+.md-subhead a {
+    text-decoration: none;
+    color: #2196F3;
+
+}
+
+.green{
+    color: #43A047;
+}
+
+.addPostContainer {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ height: 300px;
+}
+
+.selectTopic {
+    justify-content: center;
+}
