@@ -14,3 +14,5 @@
 }]);
 
 angular.module('Jango').run();
+
+})();
