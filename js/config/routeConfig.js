@@ -2,7 +2,7 @@ angular.module('Jango').config(['$routeProvider', function ($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl: "partials/home.html",
-        controller: "ViewTopicController"
+        controller: "MainController"
     })
     .when("/aww", {
         templateUrl: "partials/posts.html",
