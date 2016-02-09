@@ -1,12 +1,12 @@
 angular.module('Jango').config(function ($mdThemingProvider) {
-    var customBlueMap = $mdThemingProvider.extendPalette('light-blue', {
+    var customGreenMap = $mdThemingProvider.extendPalette('green', {
         'contrastDefaultColor': 'light',
         'contrastDarkColors': ['50'],
         '50': 'ffffff'
     });
-    $mdThemingProvider.definePalette('customBlue', customBlueMap);
+    $mdThemingProvider.definePalette('customGreen', customGreenMap);
     $mdThemingProvider.theme('default')
-      .primaryPalette('customBlue', {
+      .primaryPalette('customGreen', {
           'default': '500',
           'hue-1': '50'
       })
