@@ -4,8 +4,7 @@
     <div layout="column" flex="80">
         <div layout="column" layout-fill layout-padding>
 
-            <div ng-repeat="post in posts | orderBy: 'votes'">
-                <md-card>
+                <md-card ng-repeat="post in posts | orderBy: 'votes'">
                     <md-card-title class="cardContainer">
                         <md-card-title-text>
                             <span class="md-display-2"><a href="{{post.url}}">{{post.title}}</a></span>
@@ -22,7 +21,7 @@
                     </md-card-title>
                     
                 </md-card>
-            </div>
+
         </div>
         </div>
     </div>
